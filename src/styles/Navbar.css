@@ -1,0 +1,21 @@
+.navbar {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .navbar h1 {
+    margin-bottom: 10px;
+  }
+  .navbar nav ul {
+    list-style: none;
+  }
+  .navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  

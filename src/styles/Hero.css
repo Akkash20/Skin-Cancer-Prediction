@@ -1,0 +1,67 @@
+.hero {
+  background: #f4f4f4;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure vertical alignment */
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between elements */
+}
+
+.hero-text {
+  width: 50%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.mainButtons button{
+  margin: 10px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-text button:hover {
+  background: #0056b3;
+}
+
+.hero-text button.secondary {
+  background: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.hero-text button.secondary:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* 📱 Make it responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+}
