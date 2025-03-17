@@ -11,7 +11,7 @@ function Hero() {
             Skin cancer prediction using CNNs utilizes advanced image analysis to classify skin lesions as benign or malignant.
           </p>
           <div className="mainButtons">
-          <button onClick={() => window.location.href="#"}>Show Model</button>
+          <button className="primary" onClick={() => window.location.href="#"}>Show Model</button>
           <button className="secondary" onClick={() => window.location.href="https://www.mayoclinic.org/diseases-conditions/skin-cancer/symptoms-causes/syc-20377605"}>Read More</button>
           </div>
         </div>

@@ -1,15 +1,15 @@
 .hero {
-  background: #f4f4f4;
-  padding: 50px;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  padding: 80px 5%;
   text-align: center;
 }
 
 .hero-content {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Ensure vertical alignment */
+  align-items: center;
   flex-wrap: wrap;
-  gap: 20px; /* Adds spacing between elements */
+  gap: 40px; /* More spacing for a clean look */
 }
 
 .hero-text {
@@ -18,42 +18,69 @@
   text-align: left;
 }
 
-.mainButtons button{
-  margin: 10px;
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-.hero-image img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 10px;
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.hero-text button {
-  padding: 10px 20px;
+.mainButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.mainButtons button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.mainButtons button.primary {
   background: #007bff;
   color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  transition: 0.3s ease-in-out;
 }
 
-.hero-text button:hover {
+.mainButtons button.primary:hover {
   background: #0056b3;
+  transform: scale(1.05);
 }
 
-.hero-text button.secondary {
+.mainButtons button.secondary {
   background: transparent;
   color: #007bff;
   border: 2px solid #007bff;
 }
 
-.hero-text button.secondary:hover {
+.mainButtons button.secondary:hover {
   background: #007bff;
   color: white;
+  transform: scale(1.05);
 }
 
-/* 📱 Make it responsive */
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -63,5 +90,14 @@
   .hero-text {
     width: 100%;
     text-align: center;
+  }
+
+  .mainButtons {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mainButtons button {
+    width: 100%;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/App.css";  // ✅ Correct import
+import "./styles/App.css"; 
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -9,10 +9,12 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <InfoSection />
-      <Footer />
+
+      <Navbar/>
+      <Hero/>
+      <InfoSection/>
+      <Footer/>
+      
     </div>
   );
 }
