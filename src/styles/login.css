@@ -1,0 +1,130 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB); /* Light blue gradient */
+    color: #333; /* Dark gray for readability */
+  }
+  
+  /* Login Container */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #007BFF; /* Deep Blue */
+  }
+  
+  /* Main Wrapper */
+  .smallCointainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Wrap content for smaller screens */
+  }
+  
+  /* Sections */
+  .left-section,
+  .right-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007BFF; /* Deep Blue */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056B3; /* Darker Blue */
+    transform: scale(1.05);
+  }
+  
+  /* Form Styling */
+  .form-group {
+    margin: 20px 0;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    color: #333; /* Dark Gray */
+  }
+  
+  /* Input Fields */
+  input {
+    width: 96%;
+    padding: 12px;
+    border: 1px solid #bbb; /* Light Gray Border */
+    border-radius: 10px;
+    background-color: #F8F9FA; /* Light Gray Background */
+    color: #333;
+  }
+  
+  input::placeholder {
+    color: #777; /* Medium Gray */
+  }
+  
+  /* Register Text */
+  .register-text {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Register Link */
+  .register-link {
+    color: #007BFF; /* Blue Link */
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .register-link:hover {
+    color: #0056B3;
+  }
+  
+  /* Right Section Image */
+  .right-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    .smallCointainer {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
